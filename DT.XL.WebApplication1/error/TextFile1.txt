@@ -1,0 +1,19 @@
+﻿System.TypeInitializationException
+  HResult=0x80131534
+  Message=The type initializer for 'SixLabors.Fonts.Tables.TableLoader' threw an exception.
+  Source=SixLabors.Fonts
+  StackTrace:
+   at SixLabors.Fonts.FontCollection.AddImpl(Stream stream, CultureInfo culture, FontDescription& description)
+   at ClosedXML.Graphics.DefaultGraphicEngine.AddEmbeddedFont(FontCollection fontCollection)
+   at ClosedXML.Graphics.DefaultGraphicEngine..ctor(String fallbackFont)
+   at ClosedXML.Graphics.DefaultGraphicEngine.<>c.<.cctor>b__31_0()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at ClosedXML.Excel.XLWorkbook..ctor(LoadOptions loadOptions)
+   at DT.XL.WebApplication1.page_XL_Xport.frmXLsx.XL_Click(Object sender, EventArgs e) in D:\1402\projects 1402\DT.XL.WebApplication1\DT.XL.WebApplication1\page_XL_Xport\frmXLsx.aspx.cs:line 72
+
+  This exception was originally thrown at this call stack:
+    [External Code]
+
+Inner Exception 1:
+FileLoadException: Could not load file or assembly 'System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
